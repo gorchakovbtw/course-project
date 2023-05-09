@@ -1,0 +1,46 @@
+﻿<Page x:Class="agency.Pages.AddEditTourPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:agency.Pages"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="Информация об отеле" Height="498.913">
+
+    <Grid Margin="0,0,0,10"  >
+
+        <StackPanel  HorizontalAlignment="Left"  Width="426" Margin="50,10"  >
+            <StackPanel HorizontalAlignment=" Center" VerticalAlignment="Center" Height="389" Margin="10,0" Width="399">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBlock Style="{StaticResource BlockCommon}" Text="Название:" Width="87"></TextBlock>
+                    <TextBox Style="{ StaticResource TBoxCustom}" Name="TBoxTitle"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource BlockCommon}" Text="Город:" Width="87"></TextBlock>
+                    <TextBox Style="{ StaticResource TBoxCustom}" Name="TBoxCity"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource BlockCommon}" Text="Описание" Width="87"></TextBlock>
+                    <TextBox Style="{ StaticResource TBoxCustom}" Name="TBoxDescription" TextWrapping="Wrap" Height="287" Width="287" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" Margin="0,0,0,10" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Margin="50,10">
+                <Border Margin="5" Height="275" Width="313" BorderBrush="SteelBlue" BorderThickness="1">
+                    <Image Name="ImageHotels" Margin="0,0,-1,-1"></Image>
+                </Border>
+
+            </StackPanel>
+            <Button Height="30" Width="200" Margin="5" Name="BtnSelectImage"
+                            Click="BtnSelectImage_Click" Content="Выбрать фотографию">
+            </Button>
+            <Button Height="30" Width="200" Margin="5" Name="BtnSave"
+                            Click="BtnSave_Click" Content="Сохранить"></Button>
+        </StackPanel>
+
+
+
+    </Grid>
+</Page>

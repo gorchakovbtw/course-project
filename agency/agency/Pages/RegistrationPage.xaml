@@ -1,0 +1,33 @@
+﻿<Page x:Class="agency.Pages.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:agency.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Регистрация">
+
+    <Grid>
+
+        <Border BorderBrush="Blue" Width="300" BorderThickness="2" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="17" Background="Azure">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="400" >
+
+                <Image Source="..\Assets\logo.png" Width="130" Height="99" Margin="85,0" />
+                <TextBlock HorizontalAlignment="Center" Text="*Начните покорять мир с нами" Margin="0, 0,0,20" FontSize="18"  Style="{StaticResource BlockCommon}"></TextBlock>
+                <Polyline Stroke="Blue" StrokeThickness="2" Points="0,0 300,0" >
+                </Polyline>
+
+                <TextBlock  Text="Придумайте логин" Width="200" Style="{StaticResource BlockCommon}" HorizontalAlignment="Left" FontSize="18" Margin="15,20,0,0" Height="22" />
+                <TextBox x:Name ="TBoxLogin" Height="25" Width="210" Margin="2" MaxLength="14"/>
+
+                <TextBlock Text="Введите пароль" Style="{StaticResource BlockCommon}" FontSize="18"  Margin="15,0,0,0"/>
+                <PasswordBox x:Name="PBoxPassword" Height="25" Width="210" Margin="2" MaxLength="32"/>
+
+                <TextBlock Text="Повторите пароль" Style="{StaticResource BlockCommon}" FontSize="18"  Margin="15,0,0,0"/>
+                <PasswordBox x:Name="PBoxrepeatPassword" Height="25" Width="210" Margin="2" MaxLength="32"/>
+                <Button x:Name="BtnReg" Click="BtnReg_Click" Width="180" HorizontalAlignment="Center" Height="33" Content="Зарегистрироваться" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
