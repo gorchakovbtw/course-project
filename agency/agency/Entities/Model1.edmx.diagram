@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b4c30abcd4fd470489dd56718a8691b4" Name="Diagram1">
+        <EntityTypeShape EntityType="ISP31Model.Client" PointX="3" PointY="11.75" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Employee" PointX="3" PointY="1" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Gender" PointX="0.75" PointY="1.875" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Hotel" PointX="3" PointY="5.625" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Post" PointX="0.75" PointY="5.75" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Role" PointX="5.75" PointY="6" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Sale" PointX="5.25" PointY="1.125" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.sysdiagram" PointX="7.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.Tour" PointX="3" PointY="8.5" Width="1.5" />
+        <EntityTypeShape EntityType="ISP31Model.User" PointX="8" PointY="5.875" Width="1.5" />
+        <AssociationConnector Association="ISP31Model.FK_ClientService_Client1" />
+        <AssociationConnector Association="ISP31Model.FK_ClientService_Employee" />
+        <AssociationConnector Association="ISP31Model.FK_Employee_Gender" />
+        <AssociationConnector Association="ISP31Model.FK_Employee_Post" />
+        <AssociationConnector Association="ISP31Model.FK_Sales_Hotel" />
+        <AssociationConnector Association="ISP31Model.FK_User_Role" />
+        <AssociationConnector Association="ISP31Model.FK_ClientService_Service" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
