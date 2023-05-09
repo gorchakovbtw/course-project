@@ -1,0 +1,20 @@
+﻿agency
+
+
+winexe
+C#
+.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\
+agency
+none
+false
+DEBUG;TRACE
+D:\Курсовая работа РПМ\agency\agency\App.xaml
+131063565903
+2-1436223632
+342087080323
+20956014645
+MainWindow.xaml;Pages\AddEditEmployeePage.xaml;Pages\AddEditPage.xaml;Pages\AddEditHotelPage.xaml;Pages\AddEmployee.xaml;Pages\AddTourPage.xaml;Pages\EmployeePage.xaml;Pages\HotelPage.xaml;Pages\LoginPage.xaml;Pages\PaymentCalculationPage.xaml;Pages\RegistrationPage.xaml;Pages\SelectPages.xaml;Pages\TourPage.xaml;
+
+True
+

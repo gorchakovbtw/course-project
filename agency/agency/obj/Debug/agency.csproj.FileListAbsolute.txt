@@ -1,0 +1,147 @@
+C:\Users\79115\source\repos\agency\agency\obj\Debug\MainWindow.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditHotelPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddTourPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\HotelPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\RegistrationPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\SelectPages.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\TourPage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\App.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency_Content.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency_MarkupCompile.cache
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency_MarkupCompile.lref
+C:\Users\79115\source\repos\agency\agency\bin\Debug\agency.exe.config
+C:\Users\79115\source\repos\agency\agency\bin\Debug\agency.exe
+C:\Users\79115\source\repos\agency\agency\bin\Debug\agency.pdb
+C:\Users\79115\source\repos\agency\agency\bin\Debug\EntityFramework.dll
+C:\Users\79115\source\repos\agency\agency\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\79115\source\repos\agency\agency\bin\Debug\EntityFramework.xml
+C:\Users\79115\source\repos\agency\agency\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\79115\source\repos\agency\agency\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\79115\source\repos\agency\agency\obj\Debug\App.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\MainWindow.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditHotelPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddTourPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\HotelPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\LoginPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\RegistrationPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\SelectPages.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\TourPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.g.resources
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.Properties.Resources.resources
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.csproj.GenerateResource.cache
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.csproj.CoreCompileInputs.cache
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.csproj.CopyComplete
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.exe
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.pdb
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\EmployeePage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\EmployeePage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEmployee.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEmployee.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\agency.csproj.AssemblyReference.cache
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\PaymentCalculationPage.g.cs
+C:\Users\79115\source\repos\agency\agency\bin\Debug\HourlyPayroll.dll
+C:\Users\79115\source\repos\agency\agency\bin\Debug\HourlyPayroll.pdb
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\PaymentCalculationPage.baml
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditEmployeePage.g.cs
+C:\Users\79115\source\repos\agency\agency\obj\Debug\Pages\AddEditEmployeePage.baml
+D:\РПМ\agency\agency\bin\Debug\agency.exe.config
+D:\РПМ\agency\agency\bin\Debug\agency.exe
+D:\РПМ\agency\agency\bin\Debug\agency.pdb
+D:\РПМ\agency\agency\bin\Debug\EntityFramework.dll
+D:\РПМ\agency\agency\bin\Debug\EntityFramework.SqlServer.dll
+D:\РПМ\agency\agency\bin\Debug\HourlyPayroll.dll
+D:\РПМ\agency\agency\bin\Debug\HourlyPayroll.pdb
+D:\РПМ\agency\agency\bin\Debug\EntityFramework.xml
+D:\РПМ\agency\agency\bin\Debug\EntityFramework.SqlServer.xml
+D:\РПМ\agency\agency\bin\Debug\ru\EntityFramework.resources.dll
+D:\РПМ\agency\agency\obj\Debug\agency.csproj.AssemblyReference.cache
+D:\РПМ\agency\agency\obj\Debug\MainWindow.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditEmployeePage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditHotelPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEmployee.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\AddTourPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\EmployeePage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\HotelPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\LoginPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\PaymentCalculationPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\RegistrationPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\SelectPages.g.cs
+D:\РПМ\agency\agency\obj\Debug\Pages\TourPage.g.cs
+D:\РПМ\agency\agency\obj\Debug\App.g.cs
+D:\РПМ\agency\agency\obj\Debug\agency_Content.g.cs
+D:\РПМ\agency\agency\obj\Debug\agency_MarkupCompile.cache
+D:\РПМ\agency\agency\obj\Debug\agency_MarkupCompile.lref
+D:\РПМ\agency\agency\obj\Debug\App.baml
+D:\РПМ\agency\agency\obj\Debug\MainWindow.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditEmployeePage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEditHotelPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\AddEmployee.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\AddTourPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\EmployeePage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\HotelPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\LoginPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\PaymentCalculationPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\RegistrationPage.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\SelectPages.baml
+D:\РПМ\agency\agency\obj\Debug\Pages\TourPage.baml
+D:\РПМ\agency\agency\obj\Debug\agency.g.resources
+D:\РПМ\agency\agency\obj\Debug\agency.Properties.Resources.resources
+D:\РПМ\agency\agency\obj\Debug\agency.csproj.GenerateResource.cache
+D:\РПМ\agency\agency\obj\Debug\agency.csproj.CoreCompileInputs.cache
+D:\РПМ\agency\agency\obj\Debug\agency.csproj.CopyComplete
+D:\РПМ\agency\agency\obj\Debug\agency.exe
+D:\РПМ\agency\agency\obj\Debug\agency.pdb
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\agency.exe.config
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\agency.exe
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\agency.pdb
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\EntityFramework.dll
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\EntityFramework.SqlServer.dll
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\HourlyPayroll.dll
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\HourlyPayroll.pdb
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\EntityFramework.xml
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\EntityFramework.SqlServer.xml
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\ru\EntityFramework.resources.dll
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\MainWindow.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditEmployeePage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditHotelPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEmployee.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddTourPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\EmployeePage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\HotelPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\LoginPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\PaymentCalculationPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\RegistrationPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\SelectPages.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\TourPage.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\App.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency_Content.g.cs
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency_MarkupCompile.cache
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency_MarkupCompile.lref
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\App.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\MainWindow.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditEmployeePage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEditHotelPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddEmployee.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\AddTourPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\EmployeePage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\HotelPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\LoginPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\PaymentCalculationPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\RegistrationPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\SelectPages.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\Pages\TourPage.baml
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.g.resources
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.Properties.Resources.resources
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.csproj.GenerateResource.cache
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.csproj.CoreCompileInputs.cache
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.csproj.CopyComplete
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.exe
+D:\Курсовая работа РПМ\agency\agency\obj\Debug\agency.pdb
+D:\Курсовая работа РПМ\agency\agency\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

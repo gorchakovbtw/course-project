@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ISP31Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ISP31Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="ISP31Model.Client" />
+    <EntitySet Name="Employees" EntityType="ISP31Model.Employee" />
+    <EntitySet Name="Genders" EntityType="ISP31Model.Gender" />
+    <EntitySet Name="Hotels" EntityType="ISP31Model.Hotel" />
+    <EntitySet Name="Posts" EntityType="ISP31Model.Post" />
+    <EntitySet Name="Roles" EntityType="ISP31Model.Role" />
+    <EntitySet Name="Sales" EntityType="ISP31Model.Sale" />
+    <EntitySet Name="sysdiagrams" EntityType="ISP31Model.sysdiagram" />
+    <EntitySet Name="Tours" EntityType="ISP31Model.Tour" />
+    <EntitySet Name="Users" EntityType="ISP31Model.User" />
+    <AssociationSet Name="FK_ClientService_Client1" Association="ISP31Model.FK_ClientService_Client1">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientService_Employee" Association="ISP31Model.FK_ClientService_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Gender" Association="ISP31Model.FK_Employee_Gender">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Post" Association="ISP31Model.FK_Employee_Post">
+      <End Role="Post" EntitySet="Posts" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Hotel" Association="ISP31Model.FK_Sales_Hotel">
+      <End Role="Hotel" EntitySet="Hotels" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="ISP31Model.FK_User_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientService_Service" Association="ISP31Model.FK_ClientService_Service">
+      <End Role="Tour" EntitySet="Tours" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="RegistrationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PhotoPath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sales" Relationship="ISP31Model.FK_ClientService_Client1" FromRole="Client" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Surname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GenderTitleID" Type="Int32" />
+    <Property Name="Phone" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ImageEmp" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="PostID" Type="Int32" />
+    <NavigationProperty Name="Sales" Relationship="ISP31Model.FK_ClientService_Employee" FromRole="Employee" ToRole="Sale" />
+    <NavigationProperty Name="Gender" Relationship="ISP31Model.FK_Employee_Gender" FromRole="Employee" ToRole="Gender" />
+    <NavigationProperty Name="Post" Relationship="ISP31Model.FK_Employee_Post" FromRole="Employee" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="GenderID" />
+    </Key>
+    <Property Name="GenderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenderTitle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employees" Relationship="ISP31Model.FK_Employee_Gender" FromRole="Gender" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhotoHotel" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="HotelCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionHotel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sales" Relationship="ISP31Model.FK_Sales_Hotel" FromRole="Hotel" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostTitle" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostWorkHour" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Employees" Relationship="ISP31Model.FK_Employee_Post" FromRole="Post" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="ISP31Model.FK_User_Role" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClientID" Type="Int32" Nullable="false" />
+    <Property Name="TourID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="HotelID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="ISP31Model.FK_ClientService_Client1" FromRole="Sale" ToRole="Client" />
+    <NavigationProperty Name="Employee" Relationship="ISP31Model.FK_ClientService_Employee" FromRole="Sale" ToRole="Employee" />
+    <NavigationProperty Name="Hotel" Relationship="ISP31Model.FK_Sales_Hotel" FromRole="Sale" ToRole="Hotel" />
+    <NavigationProperty Name="Tour" Relationship="ISP31Model.FK_ClientService_Service" FromRole="Sale" ToRole="Tour" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tour">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="DaysOfStay" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Discount" Type="Double" />
+    <Property Name="MainImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Sales" Relationship="ISP31Model.FK_ClientService_Service" FromRole="Tour" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Roleld" Type="Int32" />
+    <NavigationProperty Name="Role" Relationship="ISP31Model.FK_User_Role" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK_ClientService_Client1">
+    <End Type="ISP31Model.Client" Role="Client" Multiplicity="1" />
+    <End Type="ISP31Model.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientService_Employee">
+    <End Type="ISP31Model.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="ISP31Model.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Gender">
+    <End Type="ISP31Model.Gender" Role="Gender" Multiplicity="0..1" />
+    <End Type="ISP31Model.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="GenderID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="GenderTitleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Post">
+    <End Type="ISP31Model.Post" Role="Post" Multiplicity="0..1" />
+    <End Type="ISP31Model.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="PostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Hotel">
+    <End Type="ISP31Model.Hotel" Role="Hotel" Multiplicity="1" />
+    <End Type="ISP31Model.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="HotelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Type="ISP31Model.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="ISP31Model.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Roleld" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientService_Service">
+    <End Type="ISP31Model.Tour" Role="Tour" Multiplicity="1" />
+    <End Type="ISP31Model.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
